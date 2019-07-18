@@ -259,7 +259,7 @@ class AONet:
 
             avg_loss = np.array(avg_loss)
             print("   Train loss: {0:.05f}".format(np.mean(avg_loss[:, 0])), end='')
-            print('   Test F-score avg/max: {0:0.5}/{1:0.5}'.format(val_fscore, max_val_fscore))
+            print('    Test F-score avg/max: {0:0.5}/{1:0.5}'.format(val_fscore, max_val_fscore))
 
             if self.verbose:
                 video_scores = [["No", "Video", "F-score"]] + video_scores
